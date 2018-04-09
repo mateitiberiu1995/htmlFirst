@@ -1,0 +1,62 @@
+@CHARSET "ISO-8859-1";
+
+html {
+    background-image: url("../lie.png");
+    background-color: #999999;
+}
+
+body {
+
+    background-color: #f6e6ff;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 33.3333333333%;
+    height: fit-content;
+}
+.navigation li:hover {
+    background-color: #55ffff;
+}
+.navigation a:link {
+    color: #ff5555;
+    text-decoration: none;
+}
+#home { font-weight: bold;}
+#aboutme { font-weight: bold; }
+#projects { font-weight: bold; }
+.navigation {
+    background-color: #00004d;
+    color: #f5f8ff;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    display: table;
+}
+.navigation ol {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.mainContent {
+    padding: 0px 0px 0px 0px;
+}
+.navigation {
+    background-color: #00004d;
+    color: #FFFFFF;
+}
+.content {
+    font-size: 20px;
+    text-shadow: 1px 1px #FF0000;
+    color: #000000;
+    text-align: center;
+}
+.navigation a:link {
+    color: #ce1d14;}
+.navigation a:visited {
+color: #ffff00;
+}
+
