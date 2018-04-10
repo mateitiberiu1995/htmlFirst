@@ -4,8 +4,9 @@
     <meta charset="ISO-8859-1">
     <title>welcome</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/something.js"></script>
 </head>
-<body>
+<body onload="getName()">
     <div class="mainContent">
         <div class="navigation">
             <ol>
@@ -16,8 +17,29 @@
         </div>
         <div class="content">
             <p align="left">Hello,</p>
+
             <p>My name is Tiberiu Matei and I am a student from Southampton Solent University and this is a website try.</p>
         </div>
+        <p>The square of a number: </p>
+        <input type="number" id="input1" />
+        <p id="square"></p>
+        <p>Sum of three numbers : </p>
+        <input type="number" id="sum1" />
+        <input type="number" id="sum2" />
+        <input type="number" id="sum3" />
+        <p id="sum0"></p>
+        <p>The name of the person: <span id="nameish"></span>, occupation <span id="occupation"></span> and age <span id="age"></span></p>
+        <input type="text" id="changename" />
+        <input type="text" id="changeocc" />
+        <input type="number" id="changeage" />
+        <br>
+        <p id="fizzyp"></p>
+        <button onclick="square()">square</button>
+        <button onclick="sum()">sum</button>
+        <button onclick="changedetails()">Change Details of the person</button>
+        <button  onclick="change_background()">change background colour</button>
+        <button onclick="fizzy()">fizzy loop</button>
+
     </div>
 </body>
 </html>

@@ -50,7 +50,7 @@ body {
 }
 .content {
     font-size: 20px;
-    text-shadow: 1px 1px #FF0000;
+    text-shadow: 1px 1px #ce1d14;
     color: #000000;
     text-align: center;
 }
@@ -91,4 +91,14 @@ color: #ffff00;
     display: block;
     height: 100%;
 
+}
+.content2 {
+    font-size: 20px;
+    text-shadow: 1px 1px #3c57ff;
+    color: #000000;
+    text-align: center;
+}
+.content2 li:hover{
+    text-shadow: 0px 0px;
+    font-weight: bold;
 }

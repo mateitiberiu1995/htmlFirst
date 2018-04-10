@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="ISO-8859-1">
     <title>welcome</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/something.js"></script>
 </head>
 <body>
 <div class="mainContent">
-    <div class="navigation">
+    <div  class="navigation">
         <ol>
             <li><a class="navButton" href="home.html" >Home</a></li>
             <li><a class="navButton" id="aboutme" href="aboutme.html"><img src="haha.png" alt="icon" width="14" height="14" >About Me</a></li>
             <li><a class="navButton" href="projects.html" >Project List</a></li>
         </ol>
     </div>
-    <div class="content">
+    <div id="change" class="content">
         <p>I come from a family that obtained everything they had through hard work. <br>I recently got my Bachelor of Science degree in Computer Games (software development). My strong points are learning through hard work, being always punctual about meetings and deadlines and last of all, not afraid to shoulder responsibilities. I work well in a team environment, I don't mind working under stress or pressure and I am always ready to assist my mates when they need. I am currently seeking for experience in the software industry to put my learning in practice.</p>
         <ul>
             <div class="paragrafs">
@@ -31,6 +33,13 @@
             </div>
         </ul>
     </div>
+</div>
+<div>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+    <button onclick="change_colour()">Change Colour</button>
+
 </div>
 </body>
 </html>
