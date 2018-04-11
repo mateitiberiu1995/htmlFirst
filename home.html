@@ -2,27 +2,28 @@
 <html>
 <head>
     <meta charset="ISO-8859-1">
-    <title>welcome</title>
+    <title>Tiberiu CV</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="haha.png" />
+
     <script src="js/something.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body onload="getName()">
-    <div class="mainContent">
-        <div class="navigation">
-            <ol>
-                <li><a class="navButton" id="home" href="home.html" ><img src="haha.png" alt="icon" width="14" height="14" >Home</a></li>
-                <li><a class="navButton" href="aboutme.html">About Me</a></li>
-                <li><a class="navButton" href="projects.html">Project List</a></li>
-            </ol>
-        </div>
-        <div class="content">
-            <p align="left">Hello,</p>
+<div class="navigation">
+    <ol>
+        <li id="hover1"><a class="navButton" id="home" href="home.html" ><img src="haha.png" alt="icon" width="14" height="14" >Home</a></li>
+        <li id="hover2"><a class="navButton" href="aboutme.html">About Me</a></li>
+        <li id="hover3"><a class="navButton" href="projects.html">Project List</a></li>
+    </ol>
+</div>
 
-            <p>My name is Tiberiu Matei and I am a student from Southampton Solent University and this is a website try.</p>
+    <div class="mainContent">
+        <div class="content">
+        <span>Hello,</span>
+
+        <p>My name is Tiberiu Matei and I am a student from Southampton Solent University and this is a website try.</p>
         </div>
+
         <p>The square of a number: </p>
         <input type="number" id="input1" />
         <p id="square"></p>
@@ -39,11 +40,41 @@
         <p id="fizzyp"></p>
         <button onclick="square()">square</button>
         <button onclick="sum()">sum</button>
-        <button onclick="changedetails()">Change Details of the person</button>
-        <button type="button" class="btn btn-primary" onclick="change_background()">change background colour</button>
+        <button class="details button1" onclick="changedetails()">Change Details<br> of the person</button>
+        <button class="details button1" onclick="change_background()">change background colour</button>
         <button onclick="fizzy()">fizzy loop</button>
 
     </div>
+
+<div class="div1">
+    <div class="div3">
+        <p>another body</p>
+    </div>
+    <div class="div3">
+        <p>some text</p>
+    </div>
+</div>
+<div class="div2">
+    <p>on the same line </p>
+</div>
+<div class="height">
+    <h2 class="contact_details" align="center">Contact Details.</h2>
+    <table width="95%" align="left" cellspacing="0" cellpadding="0">
+        <th align="left" width="12%"><a href="https://www.facebook.com/tiberiu.matei.319" alt="facebook profile"><img src="facebook.png" width="100px" height="50px"></a></th>
+        <th width="12%"><a href="https://www.linkedin.com/in/tiberiu-matei-582078151/" alt="linkedin profile"><img src="contact2.png" width="55px" height="50spx"> </a></th>
+        <th width="24%"><ul>
+            <li id="contact_buttons"><button class="buttonlist button1" onclick="buttonmail()">Google Email</button></li>
+            <li id="contact_buttons2"><button class="buttonlist button1" onclick="buttontelephone()">Telephone Number</button></li>
+        </ul></th>
+        <th align="center" width="28%">
+            <ul>
+                <li id="gmail"><span id="gmail1"></span></li>
+                <li id="telephone"><span id="telephone1"></span></li>
+            </ul>
+        </th>
+
+    </table>
+</div>
 </body>
 </html>
 

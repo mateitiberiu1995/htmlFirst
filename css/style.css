@@ -1,15 +1,39 @@
 @CHARSET "ISO-8859-1";
 
 html {
-    background-image: url("../lie.png");
+    background-image: url("../Portal-Wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
 }
 
 body {
 
-    background-color: #f6e6ff;
-    width: 85%;
+    background-color: transparent;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+.navigation {
+    position:fixed;
+    background-color: #ff2c44;
+    color: #f5f8ff;
+    width: 50%;
+    display: table;
+    height: 2%;
+    align-content: center;
+    border-radius: 25px;
+    margin-top: -25px;
+
+}
+.navigation {
+    background-color: #3c57ff;
+    color: #FFFFFF;
+}
+.navigation ol {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .navigation li {
     display: table-cell;
@@ -18,37 +42,26 @@ body {
     float: left;
     width: 33.3333333333%;
     height: fit-content;
+
 }
-.navigation li:hover {
-    background-color: #55ffff;
-}
-.navigation a:link {
-    color: #ff5555;
+.navButton {
     text-decoration: none;
+    color: black;
+    display: block;
+
 }
-#home { font-weight: bold;}
-#aboutme { font-weight: bold; }
-#projects { font-weight: bold; }
-.navigation {
-    background-color: #00004d;
-    color: #f5f8ff;
-    padding: 0px 0px 0px 0px;
-    width: 100%;
-    display: table;
-    height: 100%;
-    align-content: center;
-}
-.navigation ol {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+.navButton:hover
+{
+    color: #ce1d14;
 }
 .mainContent {
-    padding: 0px 0px 0px 0px;
     align-content: center;
-}
-.navigation {
-    background-color: #00004d;
-    color: #FFFFFF;
+    background-image: url("../portal.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 1% 1% 1% 1%;
 }
 .content {
     font-size: 20px;
@@ -60,22 +73,109 @@ body {
     text-shadow: 0px 0px;
     font-weight: bold;
 }
+
+#home { font-weight: bold;}
+#aboutme { font-weight: bold; }
+#projects { font-weight: bold; }
+
+.height
+{
+    background-image: url("../portal2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
+
+.div1 {
+    background-image: url("../portal2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    height: 400px;
+    width: 40%;
+    margin: 1%;
+    margin-left: 0%;
+    border-radius: 25px;
+}
+
+.div2 {
+    background-image: url("../portal.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 1%;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 0%;
+    border-radius: 25px;
+}
+.div3 {
+    margin: 1%;
+    float: left;
+    height: 200px;
+    width: 45%;
+    background-color: transparent;
+}
+.details
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonlist
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #1b1fff;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    display: inline-block;
+    font-size: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1
+{
+    background-color: #3c57ff;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button1:hover
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 .paragrafs
 {
     font-size: 15px;
     color: #000000;
     text-align: left;
 }
-.navigation a:link {
-    color: #ce1d14;}
-.navigation a:visited {
-color: #ffff00;
+.contact_details
+{
+    color: #2653d9;
+    text-shadow: 1px 1px 2px #000000;
 }
 .tabley
 {
-    background-color: #f6faff;
+    background-color: transparent;
     color: #000000;
     width: 100%;
+    border-radius: 25px;
 }
 .tabley a:link {
     color: #ff5555;
@@ -87,13 +187,7 @@ color: #ffff00;
 {
     background-color: #55ffff;
 }
-.navButton {
-    text-decoration: none;
-    width: 100%;
-    display: block;
-    height: 100%;
 
-}
 .content2 {
     font-size: 20px;
     text-shadow: 1px 1px #3c57ff;
@@ -103,4 +197,38 @@ color: #ffff00;
 .content2 li:hover{
     text-shadow: 0px 0px;
     font-weight: bold;
+}
+li#contact_buttons{
+    list-style: none;
+}
+li#contact_buttons2{
+    list-style: none;
+}
+li#gmail
+{
+    padding-bottom: 10px;
+    list-style: none;
+}
+li#telephone
+{
+    text-align: center;
+    list-style: none;
+}
+li#hover1:hover
+{
+    background-color: #55ffff;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+li#hover2:hover
+{
+    background-color: #55ffff;
+}
+li#hover3:hover
+{
+    color: black;
+
+    background-color: #55ffff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }

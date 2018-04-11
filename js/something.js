@@ -1,4 +1,6 @@
 var number=10;
+var expression1=true;
+var expression2=true;
 var Person = {
     name : "jack",
     occupation : "electrician",
@@ -76,4 +78,30 @@ function fizzy(){
                     row = row + (i).toString()  + " ";
     }
     document.getElementById("fizzyp").innerHTML = row;
+}
+function buttonmail()
+{
+    if(expression1==true)
+    {
+        expression1=false;
+        document.getElementById("gmail1").innerHTML = "mateitiberiu1995@gmail.com";
+    }
+    else
+    {
+        expression1=true;
+        document.getElementById("gmail1").innerHTML = "";
+    }
+}
+function buttontelephone()
+{
+    if(expression2==true)
+    {
+        expression2=false;
+        document.getElementById("telephone1").innerHTML = "07378291267";
+    }
+    else
+    {
+        expression2=true;
+        document.getElementById("telephone1").innerHTML = "";
+    }
 }
