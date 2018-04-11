@@ -1,22 +1,22 @@
 @CHARSET "ISO-8859-1";
 
 html {
-    background-image: url("../Portal-Wallpapers.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    background-image: url("../Portal-Wallpapers.jpg"); /*background image for the site*/
+    background-repeat: no-repeat; /*so the pictures will not repeat in the backgroud*/
+    background-size: 100% 100%; /*so it covers everything*/
+    background-attachment: fixed; /*so the image will be fixsd and not move with the scrolling*/
 
 }
 
 body {
 
-    background-color: transparent;
-    width: 50%;
+    background-color: transparent; /*background colour transparent*/
+    width: 50%; /* 50% width of the html page*/
     margin-left: auto;
     margin-right: auto;
 }
 .navigation {
-    position:fixed;
+    position:fixed; /* so the position of the navbar will stay on top and not move the when you scroll */
     background-color: #ff2c44;
     color: #f5f8ff;
     width: 50%;
