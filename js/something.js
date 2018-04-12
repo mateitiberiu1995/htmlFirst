@@ -6,6 +6,8 @@ var Person = {
     occupation : "electrician",
     age : 25
 }
+
+
 function myFunction() {
     document.getElementById("demo").innerHTML = Math.floor(Math.random()*10000/100);
 }
@@ -104,4 +106,52 @@ function buttontelephone()
         expression2=true;
         document.getElementById("telephone1").innerHTML = "";
     }
+}
+function iteration4(number)
+{
+    var counter=0;
+    while(number!=1)
+    {
+        console.log(number);
+        if(number%3==0)
+        {
+            number=number/3;
+            counter++;
+        }
+        else
+        {
+            if((number+1)%3==0)
+                number=number+1;
+            else
+                number=number-1;
+            counter++;
+        }
+    }
+    console.log(number);
+    console.log(counter);
+}
+function domPar1()
+{
+    var elem = document.getElementById("newPara");
+    if(!elem) {
+        var para = document.createElement("p");
+        var node = document.createTextNode(document.getElementById("createpara").value);
+        para.appendChild(node);
+        para.id = "newPara";
+
+        var element = document.getElementById("testing");
+        element.appendChild(para);
+    }
+}
+function domPar2()
+{
+    if(typeof(document.getElementById("newPara")) != 'undefined' && document.getElementById("newPara") != null)
+        document.getElementById("newPara").textContent = document.getElementById("changepara").value;
+
+
+}
+function domPar3()
+{
+    if(typeof(document.getElementById("newPara")) != 'undefined' && document.getElementById("newPara") != null)
+        document.getElementById("newPara").remove();
 }

@@ -18,28 +18,35 @@
 </div>
 
     <div class="mainContent">
-        <div class="content">
+        <div class="content" id="testing">
         <span>Hello,</span>
 
         <p>My name is Tiberiu Matei and I am a student from Southampton Solent University and this is a website try.</p>
         </div>
 
         <p>The square of a number: </p>
-        <input type="number" id="input1" />
+        <input type="number" id="input1" placeholder="square number"/>
         <p id="square"></p>
         <p>Sum of three numbers : </p>
-        <input type="number" id="sum1" />
-        <input type="number" id="sum2" />
-        <input type="number" id="sum3" />
+        <input type="number" id="sum1" placeholder="number one"/>
+        <input type="number" id="sum2" placeholder="number two"/>
+        <input type="number" id="sum3" placeholder="number three"/>
         <p id="sum0"></p>
         <p>The name of the person: <span id="nameish"></span>, occupation <span id="occupation"></span> and age <span id="age"></span></p>
-        <input type="text" id="changename" />
-        <input type="text" id="changeocc" />
-        <input type="number" id="changeage" />
+        <input type="text" id="changename" placeholder="Change Name"/>
+        <input type="text" id="changeocc" placeholder="Change Occupation"/>
+        <input type="number" id="changeage" placeholder="Change Age"/>
+        <br>
+        <input type="text" id="createpara" placeholder="Create a new paragraph"/>
+        <input type="text" id="changepara" placeholder="Edit the new paragraph"/>
         <br>
         <p id="fizzyp"></p>
         <button onclick="square()">square</button>
         <button onclick="sum()">sum</button>
+        <button onclick="iteration4(20)">iteration4</button>
+        <button onclick="domPar1()">create paragraph</button>
+        <button onclick="domPar2()">change paragraph</button>
+        <button onclick="domPar3()">delete paragraph</button>
         <button class="details button1" onclick="changedetails()">Change Details<br> of the person</button>
         <button class="details button1" onclick="change_background()">change background colour</button>
         <button onclick="fizzy()">fizzy loop</button>
@@ -47,15 +54,17 @@
     </div>
 
 <div class="div1">
-    <div class="div3">
-        <p>another body</p>
-    </div>
-    <div class="div3">
-        <p>some text</p>
-    </div>
+    <b class="paragrafs2">Name: </b><input align="right" type="text" id="carName" placeholder="Name of the car"/><br>
+    <b class="paragrafs2">Price: </b><input align="right" type="number" id="carPrice" placeholder="Price of the car"/><br>
+    <b class="paragrafs2">Damage: </b><input align="right" type="number" id="carDamage" placeholder="Damage of the car"/>
+    <p align="center"><button class="button1">Submit</button></p>
 </div>
 <div class="div2">
+
     <p>on the same line </p>
+    <textarea rows="6" cols="50">
+
+</textarea>
 </div>
 <div class="height">
     <h2 class="contact_details" align="center">Contact Details.</h2>
