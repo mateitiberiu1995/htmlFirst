@@ -155,3 +155,77 @@ function domPar3()
     if(typeof(document.getElementById("newPara")) != 'undefined' && document.getElementById("newPara") != null)
         document.getElementById("newPara").remove();
 }
+function cubes(wording,a,b) {
+    var row=true;
+    var column=true;
+    /*if(a%2==0)
+    {
+        row=false;
+        column=false;
+    }
+    else
+    {
+        row=true;
+        column=true;
+    }*/
+    var checkcolumn=1;
+    var checkrow=0;
+    if(row==false)
+        checkrow=wording.length-1;
+    if(column==false)
+        checkcolumn=wording.length-2;
+    var char=[]
+    for(let i=0;i<wording.length;i++)
+        char[i]=wording.charAt(i);
+    for(let i=0;i<wording.length*b;i++) {
+        if((i===0) || ((i+1)%wording.length==0))
+        {
+            for(let j=0;j<wording.length*a-1;j++)
+            {
+                console.log(wording.charAt(checkrow));
+                if(checkrow==wording.length-1)
+                {
+                    row=false;
+                }
+                else
+                    if(checkrow==0)
+                        row=true;
+                if(row==true)
+                    checkrow++;
+                else
+                    checkrow--;
+            }
+            if(row==true)
+            {
+                row=false;
+                checkrow=wording.length-1;
+            }
+            else
+            {
+                row=true;
+                checkrow=0;
+            }
+        }
+        else
+        {
+            for(let j=0;j<wording.length*a-1;j++)
+            {
+                if((j===0) || ((j+1)%wording.length==0))
+                {
+                    console.log(wording.charAt(checkcolumn));
+                    if(checkcolumn==wording.length-2)
+                    {
+                        column=false;
+                    }
+                    else
+                        if(checkcolumn==1)
+                        {
+                            column=true;
+                        }
+                     if(column==true)
+                         
+                }
+            }
+        }
+    }
+}
